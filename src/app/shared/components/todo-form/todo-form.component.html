@@ -1,0 +1,10 @@
+
+<div class="card bg-dark text-white text-capitalize">
+    <div class="card-body">
+        <div class="form-group">
+            <label for="todoitem">todoitem</label>
+            <input type="text" #todoitem id="todoitem" (input)="validInput()" class="form-control">
+        </div>
+        <button (click)="AddTodo()" class="btn btn-sm btn-block btn-outline-success">Add todo</button>
+    </div>
+</div>

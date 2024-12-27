@@ -1,0 +1,12 @@
+
+<ul 
+*ngIf="getTodoArray.length >0; else noTodo"
+class="list-group">
+    <li 
+    *ngFor="let todo of getTodoArray"
+    class="list-group-item bg-dark text-white text-center text-capitalize">{{todo.todoItem}}</li>
+</ul>
+<ng-template #noTodo>
+    <p class="alert alert-success">in todolist todoitem is not availabel!!</p>
+</ng-template>
+ 
